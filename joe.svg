@@ -1,15 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
-  <rect width="512" height="512" fill="#0A0B10"/>
-  <ellipse cx="350" cy="150" rx="140" ry="80" fill="#00E5FF" opacity="0.2" transform="rotate(-15 350 150)"/>
-  <path d="M 180 200 L 360 200 L 380 400 L 160 400 Z" fill="#1A1A1A" stroke="#00E5FF" stroke-width="6"/>
-  <path d="M 260 200 L 280 400 L 300 200 Z" fill="#FFCA28"/>
-  <circle cx="200" cy="120" r="90" fill="#FFCA28" stroke="#00E5FF" stroke-width="6"/>
-  <path d="M 110 60 Q 200 10 290 60 L 290 80 Q 200 30 110 80 Z" fill="#FF0055"/>
-  <path d="M 280 70 L 380 40 L 360 100 Z" fill="#FF0055"/>
-  <rect x="120" y="100" width="160" height="50" rx="10" fill="#000000" stroke="#00E5FF" stroke-width="4"/>
-  <rect x="140" y="110" width="40" height="20" rx="5" fill="#FF0055" opacity="0.8"/>
-  <rect x="220" y="110" width="40" height="20" rx="5" fill="#FF0055" opacity="0.8"/>
-  <rect x="80" y="160" width="80" height="20" fill="#00E5FF" opacity="0.8"/>
-  <path d="M 160 260 L 60 280 L 40 340 L 120 360" fill="none" stroke="#00E5FF" stroke-width="8"/>
-  <rect x="20" y="280" width="120" height="40" rx="5" fill="#1A1A1A" stroke="#FF0055" stroke-width="6"/>
+  <rect width="512" height="512" fill="#FFF9C4"/>
+  <path d="M 100 100 L 400 100 L 450 400 L 50 400 Z" fill="none" stroke="#000" stroke-width="12"/>
+  <path d="M 150 200 L 350 200 L 380 400 L 120 400 Z" fill="#FFCA28" stroke="#000" stroke-width="12"/>
+  <path d="M 250 200 L 280 400 L 300 200 Z" fill="#1A1A1A"/>
+  <circle cx="200" cy="120" r="80" fill="#FFCA28" stroke="#000" stroke-width="12"/>
+  <path d="M 120 60 Q 200 10 280 60 L 280 80 Q 200 30 120 80 Z" fill="#D32F2F" stroke="#000" stroke-width="12"/>
+  <rect x="120" y="100" width="160" height="50" rx="10" fill="#1A1A1A" stroke="#000" stroke-width="8"/>
+  <rect x="140" y="110" width="40" height="20" rx="5" fill="#FFFFFF"/>
+  <rect x="220" y="110" width="40" height="20" rx="5" fill="#FFFFFF"/>
+  <path d="M 150 260 L 60 280 L 40 340 L 120 360" fill="#1A1A1A" stroke="#000" stroke-width="12"/>
+  <rect x="20" y="280" width="120" height="40" rx="5" fill="#616161" stroke="#000" stroke-width="12"/>
 </svg>
