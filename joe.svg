@@ -1,55 +1,48 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 32 32" shape-rendering="crispEdges">
-  <!-- Фон (прозрачный, чтобы в игре накладывать на уровень) -->
+  <!-- Фон (прозрачный) -->
+
+  <!-- КРЫЛЬЯ (сзади, как на твоём рисунке) -->
+  <rect x="22" y="8" width="10" height="16" fill="#AED6F1" opacity="0.7"/>
+  <rect x="24" y="12" width="8" height="10" fill="#AED6F1" opacity="0.7"/>
+
+  <!-- ЗАДНЯЯ НОГА -->
+  <rect x="18" y="24" width="4" height="6" fill="#F1C40F"/>
+  <rect x="16" y="30" width="8" height="2" fill="#3E2723"/> <!-- Ботинок -->
+
+  <!-- ТЕЛО (Мощный торс) -->
+  <rect x="8" y="14" width="12" height="12" fill="#F1C40F"/>
   
-  <!-- КРЫЛЬЯ (Светло-голубые, полупрозрачные, сзади) -->
-  <rect x="20" y="8" width="10" height="12" fill="#AED6F1" opacity="0.7"/>
-  <rect x="22" y="12" width="8" height="10" fill="#AED6F1" opacity="0.7"/>
+  <!-- БРОНЕЖИЛЕТ (Тёмно-серый) -->
+  <rect x="8" y="14" width="12" height="8" fill="#424242"/>
+  <rect x="8" y="22" width="12" height="2" fill="#212121"/> <!-- Ремень -->
+  <rect x="13" y="22" width="2" height="2" fill="#F1C40F"/> <!-- Пряжка -->
 
-  <!-- БАНДАНА (Красная, развевается сзади) -->
-  <rect x="6" y="2" width="18" height="4" fill="#E74C3C"/>
-  <rect x="22" y="4" width="6" height="2" fill="#E74C3C"/>
-  <rect x="24" y="6" width="6" height="2" fill="#E74C3C"/>
+  <!-- ГОЛОВА И ШЛЕМ -->
+  <rect x="8" y="4" width="12" height="10" fill="#F1C40F"/>
+  
+  <!-- ШЛЕМ / БАНДАНА (Красный, как на рисунке) -->
+  <rect x="6" y="2" width="16" height="4" fill="#D32F2F"/>
+  <rect x="20" y="4" width="4" height="2" fill="#D32F2F"/> <!-- Хвостик банданы -->
 
-  <!-- ГОЛОВА (Жёлтая) -->
-  <rect x="8" y="4" width="14" height="10" fill="#F1C40F"/>
+  <!-- ЗАБРАЛО / ОЧКИ (Тёмное, как у Терминатора) -->
+  <rect x="8" y="7" width="12" height="4" fill="#1A1A1A"/>
+  <rect x="10" y="7" width="2" height="1" fill="#FFFFFF"/> <!-- Блик -->
+  <rect x="16" y="7" width="2" height="1" fill="#FFFFFF"/> <!-- Блик -->
 
-  <!-- ОЧКИ АВИАТОРЫ (Чёрные, как у Терминатора) -->
-  <rect x="8" y="7" width="14" height="3" fill="#1A1A1A"/>
-  <!-- Блики на очках (Белые) -->
-  <rect x="10" y="7" width="3" height="1" fill="#FFFFFF"/>
-  <rect x="17" y="7" width="3" height="1" fill="#FFFFFF"/>
+  <!-- РУКА С ПУШКОЙ (Слева, как на рисунке) -->
+  <rect x="4" y="16" width="4" height="4" fill="#F1C40F"/>
+  
+  <!-- ПУШКА (Большая, серая) -->
+  <rect x="0" y="16" width="8" height="4" fill="#616161"/> <!-- Ствол -->
+  <rect x="0" y="17" width="2" height="2" fill="#1A1A1A"/> <!-- Дуло -->
+  <rect x="2" y="20" width="3" height="4" fill="#424242"/> <!-- Магазин -->
 
-  <!-- СИГАРА (Коричневая, с красным огоньком) -->
-  <rect x="4" y="11" width="6" height="2" fill="#5D4037"/>
-  <rect x="3" y="11" width="1" height="2" fill="#FF5722"/>
+  <!-- ПЕРЕДНЯЯ НОГА -->
+  <rect x="10" y="24" width="4" height="6" fill="#F1C40F"/>
+  <rect x="8" y="30" width="8" height="2" fill="#3E2723"/> <!-- Ботинок -->
 
-  <!-- КОЖАНАЯ КУРТКА И ЖИЛЕТ (Чёрный и тёмно-серый) -->
-  <rect x="8" y="14" width="14" height="12" fill="#1A1A1A"/>
-  <!-- Молния куртки (Жёлтая полоска шмеля) -->
-  <rect x="14" y="14" width="2" height="12" fill="#F1C40F"/>
-  <!-- Бронежилет поверх куртки (Тёмно-серый) -->
-  <rect x="9" y="16" width="12" height="8" fill="#424242"/>
-  <!-- Ремень (Коричневый) -->
-  <rect x="8" y="25" width="14" height="2" fill="#4E342E"/>
-  <!-- Пряжка ремня (Золотая) -->
-  <rect x="14" y="25" width="2" height="2" fill="#F1C40F"/>
-
-  <!-- РУКИ -->
-  <!-- Левая рука (держит пулемёт) -->
-  <rect x="4" y="16" width="4" height="6" fill="#1A1A1A"/>
-  <!-- Правая рука -->
-  <rect x="22" y="16" width="4" height="6" fill="#1A1A1A"/>
-
-  <!-- ПУЛЕМЁТ (Огромный, серый) -->
-  <rect x="0" y="18" width="8" height="4" fill="#7F8C8D"/> <!-- Ствол -->
-  <rect x="0" y="19" width="2" height="2" fill="#1A1A1A"/> <!-- Дуло -->
-  <rect x="3" y="22" width="3" height="5" fill="#424242"/> <!-- Магазин -->
-
-  <!-- НОГИ (Жёлтые) -->
-  <rect x="10" y="27" width="4" height="3" fill="#F1C40F"/>
-  <rect x="16" y="27" width="4" height="3" fill="#F1C40F"/>
-
-  <!-- БОТИНКИ (Тёмно-коричневые, военные) -->
-  <rect x="8" y="30" width="8" height="2" fill="#3E2723"/>
-  <rect x="16" y="30" width="8" height="2" fill="#3E2723"/>
+  <!-- ДЕТАЛИ: РОТ И УСИКИ -->
+  <rect x="10" y="11" width="6" height="1" fill="#1A1A1A"/> <!-- Суровый рот -->
+  <rect x="6" y="2" width="2" height="2" fill="#1A1A1A"/> <!-- Усик -->
+  <rect x="24" y="2" width="2" height="2" fill="#1A1A1A"/> <!-- Усик -->
 </svg>
