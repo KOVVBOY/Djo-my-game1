@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <!-- Крылья (полупрозрачные, сзади) -->
+  <ellipse cx="42" cy="22" rx="14" ry="8" fill="#E3F2FD" opacity="0.6" stroke="#90CAF9" stroke-width="1" transform="rotate(-15 42 22)"/>
+  <ellipse cx="46" cy="28" rx="12" ry="7" fill="#E3F2FD" opacity="0.6" stroke="#90CAF9" stroke-width="1" transform="rotate(-5 46 28)"/>
+
+  <!-- Задняя нога -->
+  <path d="M 38 48 L 34 58 L 30 58" stroke="#212121" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Тело (брюшко) -->
+  <ellipse cx="38" cy="38" rx="16" ry="14" fill="#FFC107" stroke="#F57F17" stroke-width="1.5"/>
+  <!-- Полоски на теле -->
+  <path d="M 30 28 Q 28 38 30 50" stroke="#212121" stroke-width="3" fill="none"/>
+  <path d="M 38 25 Q 36 38 38 51" stroke="#212121" stroke-width="3" fill="none"/>
+  <path d="M 46 28 Q 44 38 46 48" stroke="#212121" stroke-width="3" fill="none"/>
+
+  <!-- Жало -->
+  <path d="M 54 38 L 62 42 L 53 42 Z" fill="#212121"/>
+
+  <!-- Грудь (торс) -->
+  <ellipse cx="24" cy="34" rx="10" ry="11" fill="#F57F17"/>
+  
+  <!-- Передняя нога -->
+  <path d="M 24 44 L 20 56 L 16 56" stroke="#212121" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Средняя нога -->
+  <path d="M 30 45 L 28 57 L 24 57" stroke="#212121" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Рука с пистолетом -->
+  <path d="M 20 34 L 12 36" stroke="#F57F17" stroke-width="4" stroke-linecap="round"/>
+  <!-- Пистолет -->
+  <rect x="4" y="33" width="10" height="4" fill="#37474F"/>
+  <rect x="6" y="37" width="4" height="5" fill="#263238"/>
+
+  <!-- Голова -->
+  <circle cx="16" cy="24" r="10" fill="#FFC107" stroke="#F57F17" stroke-width="1.5"/>
+  
+  <!-- Глаз (суровый) -->
+  <path d="M 10 22 L 15 23" stroke="#212121" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="12" cy="24" r="1.5" fill="#212121"/>
+  
+  <!-- Рот / сигара -->
+  <rect x="6" y="28" width="8" height="2" fill="#3E2723" rx="1"/>
+
+  <!-- Бандана -->
+  <path d="M 8 18 Q 16 12 24 18 L 24 21 Q 16 15 8 21 Z" fill="#D32F2F"/>
+  <path d="M 22 19 L 30 16 L 28 22 Z" fill="#D32F2F"/>
+
+  <!-- Усики -->
+  <line x1="12" y1="15" x2="8" y2="8" stroke="#212121" stroke-width="1.5"/>
+  <circle cx="7" cy="7" r="2" fill="#212121"/>
+  <line x1="18" y1="14" x2="20" y2="6" stroke="#212121" stroke-width="1.5"/>
+  <circle cx="20" cy="5" r="2" fill="#212121"/>
+</svg>
