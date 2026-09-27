@@ -2,65 +2,63 @@
   <!-- ФОН (прозрачный) -->
 
   <!-- КРЫЛЬЯ (за спиной, простые) -->
-  <rect x="40" y="22" width="16" height="18" fill="#AED6F1" opacity="0.7"/>
-  <rect x="44" y="26" width="10" height="10" fill="#FFFFFF" opacity="0.8"/>
+  <rect x="42" y="22" width="14" height="16" fill="#AED6F1" opacity="0.6"/>
+  <rect x="45" y="25" width="8" height="10" fill="#FFFFFF" opacity="0.8"/>
 
   <!-- ЗАДНЯЯ НОГА (палочка) -->
-  <rect x="34" y="44" width="4" height="12" fill="#FFCA28"/>
+  <rect x="34" y="46" width="4" height="10" fill="#FFCA28"/>
 
-  <!-- БРЮШКО ШМЕЛЯ (полосатое, сзади) -->
-  <rect x="38" y="30" width="14" height="16" fill="#FFCA28"/>
-  <rect x="42" y="30" width="3" height="16" fill="#1A1A1A"/>
-  <rect x="48" y="30" width="3" height="16" fill="#1A1A1A"/>
+  <!-- ЗАДНИЙ БОТИНОК (Огромный) -->
+  <rect x="28" y="54" width="16" height="8" fill="#1A1A1A"/>
+  <rect x="28" y="60" width="16" height="3" fill="#3E2723"/> <!-- Подошва -->
+  <rect x="30" y="55" width="3" height="2" fill="#616161"/> <!-- Блик -->
+  <rect x="37" y="55" width="3" height="2" fill="#616161"/> <!-- Блик -->
 
-  <!-- ТЕЛО (груша, как на рисунке) -->
-  <rect x="18" y="28" width="22" height="18" fill="#FFCA28"/>
-
-  <!-- РЕМЕНЬ (диагональ через тело) -->
-  <path d="M 18 46 L 40 28 L 44 32 L 22 50 Z" fill="#3E2723"/>
-  <rect x="28" y="36" width="6" height="6" fill="#616161"/>
+  <!-- ТЕЛО (Гуманоидный торс) -->
+  <rect x="20" y="28" width="24" height="18" fill="#FFCA28"/>
+  
+  <!-- БРОНЕЖИЛЕТ / КУРТКА (Чёрная, как у Рэмбо) -->
+  <rect x="20" y="28" width="24" height="12" fill="#1A1A1A"/>
+  <!-- Ремень -->
+  <rect x="20" y="40" width="24" height="4" fill="#3E2723"/>
+  <rect x="28" y="40" width="8" height="4" fill="#616161"/> <!-- Пряжка -->
 
   <!-- ПЕРЕДНЯЯ НОГА (палочка) -->
-  <rect x="24" y="44" width="4" height="12" fill="#FFCA28"/>
+  <rect x="26" y="46" width="4" height="10" fill="#FFCA28"/>
 
-  <!-- ✨ ОСОБЕННАЯ ДЕТАЛЬ: ГИГАНТСКИЕ БОТИНКИ ✨ -->
-  <!-- Задний ботинок -->
-  <rect x="26" y="54" width="18" height="8" fill="#1A1A1A"/>
-  <rect x="26" y="60" width="18" height="3" fill="#3E2723"/> <!-- Подошва -->
-  <rect x="28" y="55" width="3" height="2" fill="#616161"/> <!-- Блик -->
-  <rect x="34" y="55" width="3" height="2" fill="#616161"/> <!-- Блик -->
-  <rect x="40" y="55" width="3" height="2" fill="#616161"/> <!-- Блик -->
+  <!-- ПЕРЕДНИЙ БОТИНОК (Огромный, с бликами) -->
+  <rect x="14" y="54" width="18" height="8" fill="#1A1A1A"/>
+  <rect x="14" y="60" width="18" height="3" fill="#3E2723"/> <!-- Подошва -->
+  <rect x="16" y="55" width="4" height="2" fill="#616161"/> <!-- Блик -->
+  <rect x="24" y="55" width="4" height="2" fill="#616161"/> <!-- Блик -->
 
-  <!-- Передний ботинок (ЧУТЬ ВЫШЕ И БОЛЬШЕ) -->
-  <rect x="12" y="53" width="20" height="9" fill="#1A1A1A"/>
-  <rect x="12" y="60" width="20" height="3" fill="#3E2723"/> <!-- Подошва -->
-  <rect x="14" y="54" width="4" height="2" fill="#616161"/> <!-- Блик -->
-  <rect x="21" y="54" width="4" height="2" fill="#616161"/> <!-- Блик -->
-  <rect x="28" y="54" width="3" height="2" fill="#616161"/> <!-- Блик -->
+  <!-- СИЛЬНЫЕ РУКИ (Мускулистые, без оружия) -->
+  <!-- Левая рука -->
+  <rect x="12" y="28" width="8" height="14" fill="#FFCA28"/>
+  <rect x="12" y="40" width="8" height="6" fill="#1A1A1A"/> <!-- Чёрный кулак -->
+  
+  <!-- Правая рука -->
+  <rect x="44" y="28" width="8" height="14" fill="#FFCA28"/>
+  <rect x="44" y="40" width="8" height="6" fill="#1A1A1A"/> <!-- Чёрный кулак -->
 
-  <!-- РУКА (держит пушку) -->
-  <rect x="14" y="34" width="6" height="10" fill="#FFCA28"/>
+  <!-- ГОЛОВА (Крупная) -->
+  <rect x="18" y="6" width="28" height="22" rx="4" fill="#FFCA28"/>
 
-  <!-- ПУШКА (диагональная) -->
-  <path d="M 6 50 L 42 18 L 48 24 L 12 56 Z" fill="#424242"/>
-  <path d="M 40 16 L 56 8 L 60 16 L 46 26 Z" fill="#1A1A1A"/> <!-- Раструб -->
-  <rect x="4" y="48" width="8" height="10" fill="#3E2723"/> <!-- Приклад -->
+  <!-- БАНДАНА (Красная, как у Рэмбо) -->
+  <rect x="16" y="2" width="32" height="6" fill="#D32F2F"/>
+  <rect x="46" y="4" width="8" height="4" fill="#D32F2F"/> <!-- Хвост банданы -->
+  <rect x="52" y="6" width="6" height="3" fill="#D32F2F"/> <!-- Кончик хвоста -->
 
-  <!-- ГОЛОВА (простая, но с характером) -->
-  <rect x="16" y="8" width="26" height="22" rx="6" fill="#FFCA28"/>
-
-  <!-- УСИКИ (закрученные) -->
-  <rect x="22" y="0" width="2" height="10" fill="#1A1A1A"/>
-  <rect x="18" y="0" width="6" height="2" fill="#1A1A1A"/>
-  <rect x="34" y="0" width="2" height="10" fill="#1A1A1A"/>
-  <rect x="32" y="0" width="6" height="2" fill="#1A1A1A"/>
-
-  <!-- ЗЛЫЕ ГЛАЗА (V-брови + точки) -->
-  <path d="M 20 16 L 26 19" stroke="#1A1A1A" stroke-width="2"/>
-  <path d="M 38 16 L 32 19" stroke="#1A1A1A" stroke-width="2"/>
-  <rect x="21" y="20" width="4" height="4" fill="#1A1A1A"/>
-  <rect x="33" y="20" width="4" height="4" fill="#1A1A1A"/>
+  <!-- ТЁМНЫЕ ОЧКИ-АВИАТОРЫ (Как у Рэмбо/Терминатора) -->
+  <rect x="18" y="12" width="28" height="6" fill="#1A1A1A"/>
+  <!-- Блики на очках -->
+  <rect x="22" y="13" width="6" height="2" fill="#FFFFFF"/>
+  <rect x="36" y="13" width="6" height="2" fill="#FFFFFF"/>
 
   <!-- СУРОВЫЙ РОТ -->
-  <rect x="24" y="26" width="10" height="2" fill="#1A1A1A"/>
+  <rect x="26" y="22" width="12" height="2" fill="#1A1A1A"/>
+
+  <!-- УСИКИ (Короткие, торчат вверх) -->
+  <rect x="22" y="0" width="2" height="6" fill="#1A1A1A"/>
+  <rect x="40" y="0" width="2" height="6" fill="#1A1A1A"/>
 </svg>
