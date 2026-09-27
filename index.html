@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Наёмник Джо</title>
+    <style>
+        body { margin: 0; overflow: hidden; background: #5C94FC; } /* Синее небо как в Марио */
+        canvas { display: block; }
+    </style>
+</head>
+<body>
+    <canvas id="gameCanvas" width="800" height="400"></canvas>
+
+    <script>
+        const canvas = document.getElementById('gameCanvas');
+        const ctx = canvas.getContext('2d');
+
+        // Загружаем твой спрайт
+        const joeImg = new Image();
+        joeImg.src = 'joe.png';
+
+        // Настройки Джо
+        let joe = {
+            x: 100,
+            y: 200,
+            width: 150,  // Размер на экране
+            height: 150,
+            speed: 5
+        };
+
+        // Управление (просто для теста, на телефоне будет сложнее, но пока так)
+        const keys = {};
+        window.addEventListener('keydown', (e) => keys[e.key] = true);
+        window.addEventListener('keyup', (e) => keys[e.key] = false);
+
+        // Игровой цикл
+        function gameLoop() {
+            // Очищаем экран
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+            // Двигаем Джо
+            if (keys['ArrowRight']) joe.x += joe.speed;
+            if (keys['ArrowLeft']) joe.x -= joe.speed;
+            if (keys['ArrowUp']) joe.y -= joe.speed;
+            if (keys['ArrowDown']) joe.y += joe.speed;
+
+            // Рисуем твой спрайт
+            if (joeImg.complete) {
+                ctx.drawImage(joeImg, joe.x, joe.y, joe.width, joe.height);
+            }
+
+            // Рисуем землю
+            ctx.fillStyle = '#4CAF50';
+            ctx.fillRect(0, 350, canvas.width, 50);
+
+            requestAnimationFrame(gameLoop);
+        }
+
+        gameLoop();
+    </script>
+</body>
+</html>
