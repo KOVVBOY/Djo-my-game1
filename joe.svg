@@ -1,14 +1,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
-  <rect width="512" height="512" fill="#1A1A1A"/>
-  <polygon points="256,100 350,200 256,300 162,200" fill="#FFCA28"/>
-  <polygon points="256,100 350,200 400,150" fill="#F9A825"/>
-  <polygon points="256,100 162,200 120,150" fill="#F9A825"/>
-  <polygon points="256,300 350,200 380,380" fill="#D32F2F"/>
-  <polygon points="256,300 162,200 130,380" fill="#D32F2F"/>
-  <polygon points="256,300 380,380 130,380" fill="#1A1A1A"/>
-  <polygon points="380,380 450,450 350,480" fill="#616161"/>
-  <polygon points="130,380 50,450 150,480" fill="#616161"/>
-  <polygon points="256,80 300,120 256,140 212,120" fill="#D32F2F"/>
-  <polygon points="200,180 250,210 200,240 150,210" fill="#FFFFFF" opacity="0.8"/>
-  <polygon points="312,180 362,210 312,240 262,210" fill="#FFFFFF" opacity="0.8"/>
+  <rect width="512" height="512" fill="#2E3B32"/>
+  <rect x="150" y="200" width="200" height="200" rx="20" fill="#4A5D23"/>
+  <rect x="180" y="250" width="140" height="100" rx="10" fill="#1A1A1A"/>
+  <circle cx="200" cy="120" r="90" fill="#4A5D23"/>
+  <path d="M 110 60 Q 200 10 290 60 L 290 80 Q 200 30 110 80 Z" fill="#3E2723"/>
+  <rect x="120" y="100" width="160" height="50" rx="10" fill="#1A1A1A"/>
+  <rect x="140" y="110" width="40" height="20" rx="5" fill="#4A5D23"/>
+  <rect x="220" y="110" width="40" height="20" rx="5" fill="#4A5D23"/>
+  <rect x="80" y="160" width="80" height="20" fill="#3E2723"/>
+  <path d="M 150 260 L 60 280 L 40 340 L 120 360" fill="#1A1A1A"/>
+  <rect x="20" y="280" width="120" height="40" rx="5" fill="#2E3B32"/>
+  <rect x="0" y="290" width="30" height="20" fill="#1A1A1A"/>
 </svg>
