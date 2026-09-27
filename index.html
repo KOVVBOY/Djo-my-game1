@@ -2,18 +2,72 @@
 <html>
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>Наёмник Джо</title>
     <style>
-        body { margin: 0; overflow: hidden; background: #5C94FC; } /* Синее небо как в Марио */
+        body {
+            margin: 0;
+            overflow: hidden;
+            background: #5C94FC;
+            touch-action: none; /* отключает прокрутку при нажатии */
+            font-family: Arial, sans-serif;
+        }
         canvas { display: block; }
+        
+        /* Кнопки управления */
+        .controls {
+            position: fixed;
+            bottom: 20px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 20px;
+            box-sizing: border-box;
+            pointer-events: none;
+        }
+        .btn {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.5);
+            border: 4px solid #1A1A1A;
+            font-size: 40px;
+            font-weight: bold;
+            color: #1A1A1A;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            user-select: none;
+            pointer-events: auto;
+            touch-action: none;
+        }
+        .btn:active { background: rgba(255, 255, 255, 0.9); }
+        .left-group { display: flex; gap: 15px; }
     </style>
 </head>
 <body>
-    <canvas id="gameCanvas" width="800" height="400"></canvas>
+    <canvas id="gameCanvas"></canvas>
+
+    <!-- Кнопки управления -->
+    <div class="controls">
+        <div class="left-group">
+            <div class="btn" id="btnLeft">◀</div>
+            <div class="btn" id="btnRight">▶</div>
+        </div>
+        <div class="btn" id="btnJump">▲</div>
+    </div>
 
     <script>
         const canvas = document.getElementById('gameCanvas');
         const ctx = canvas.getContext('2d');
+
+        // Растягиваем canvas на весь экран
+        function resize() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        }
+        resize();
+        window.addEventListener('resize', resize);
 
         // Загружаем твой спрайт
         const joeImg = new Image();
@@ -22,36 +76,93 @@
         // Настройки Джо
         let joe = {
             x: 100,
-            y: 200,
-            width: 150,  // Размер на экране
-            height: 150,
-            speed: 5
+            y: 300,
+            width: 120,
+            height: 120,
+            speed: 6,
+            vy: 0,          // вертикальная скорость (для прыжка)
+            gravity: 0.8,   // гравитация
+            jumpPower: -16, // сила прыжка
+            onGround: false
         };
 
-        // Управление (просто для теста, на телефоне будет сложнее, но пока так)
-        const keys = {};
-        window.addEventListener('keydown', (e) => keys[e.key] = true);
-        window.addEventListener('keyup', (e) => keys[e.key] = false);
+        // Состояние кнопок
+        let moveLeft = false;
+        let moveRight = false;
+        let jumpPressed = false;
 
-        // Игровой цикл
+        // Подключаем кнопки
+        const btnLeft = document.getElementById('btnLeft');
+        const btnRight = document.getElementById('btnRight');
+        const btnJump = document.getElementById('btnJump');
+
+        // Левая кнопка
+        btnLeft.addEventListener('touchstart', (e) => { e.preventDefault(); moveLeft = true; });
+        btnLeft.addEventListener('touchend', (e) => { e.preventDefault(); moveLeft = false; });
+        btnLeft.addEventListener('mousedown', () => moveLeft = true);
+        btnLeft.addEventListener('mouseup', () => moveLeft = false);
+        btnLeft.addEventListener('mouseleave', () => moveLeft = false);
+
+        // Правая кнопка
+        btnRight.addEventListener('touchstart', (e) => { e.preventDefault(); moveRight = true; });
+        btnRight.addEventListener('touchend', (e) => { e.preventDefault(); moveRight = false; });
+        btnRight.addEventListener('mousedown', () => moveRight = true);
+        btnRight.addEventListener('mouseup', () => moveRight = false);
+        btnRight.addEventListener('mouseleave', () => moveRight = false);
+
+        // Прыжок
+        btnJump.addEventListener('touchstart', (e) => { e.preventDefault(); jumpPressed = true; });
+        btnJump.addEventListener('touchend', (e) => { e.preventDefault(); jumpPressed = false; });
+        btnJump.addEventListener('mousedown', () => jumpPressed = true);
+        btnJump.addEventListener('mouseup', () => jumpPressed = false);
+        btnJump.addEventListener('mouseleave', () => jumpPressed = false);
+
+        // Земля
+        const groundY = 0.85; // 85% высоты экрана
+
         function gameLoop() {
             // Очищаем экран
             ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-            // Двигаем Джо
-            if (keys['ArrowRight']) joe.x += joe.speed;
-            if (keys['ArrowLeft']) joe.x -= joe.speed;
-            if (keys['ArrowUp']) joe.y -= joe.speed;
-            if (keys['ArrowDown']) joe.y += joe.speed;
+            // Земля
+            const groundHeight = canvas.height * (1 - groundY);
+            ctx.fillStyle = '#4CAF50';
+            ctx.fillRect(0, canvas.height - groundHeight, canvas.width, groundHeight);
 
-            // Рисуем твой спрайт
-            if (joeImg.complete) {
-                ctx.drawImage(joeImg, joe.x, joe.y, joe.width, joe.height);
+            // Движение влево-вправо
+            if (moveLeft) joe.x -= joe.speed;
+            if (moveRight) joe.x += joe.speed;
+
+            // Не выходить за экран
+            if (joe.x < 0) joe.x = 0;
+            if (joe.x + joe.width > canvas.width) joe.x = canvas.width - joe.width;
+
+            // Прыжок
+            if (jumpPressed && joe.onGround) {
+                joe.vy = joe.jumpPower;
+                joe.onGround = false;
             }
 
-            // Рисуем землю
-            ctx.fillStyle = '#4CAF50';
-            ctx.fillRect(0, 350, canvas.width, 50);
+            // Гравитация
+            joe.vy += joe.gravity;
+            joe.y += joe.vy;
+
+            // Проверка земли
+            const floor = canvas.height - groundHeight - joe.height;
+            if (joe.y >= floor) {
+                joe.y = floor;
+                joe.vy = 0;
+                joe.onGround = true;
+            }
+
+            // Рисуем Джо
+            if (joeImg.complete) {
+                ctx.drawImage(joeImg, joe.x, joe.y, joe.width, joe.height);
+            } else {
+                // Если картинка ещё не загрузилась — рисуем жёлтый прямоугольник
+                ctx.fillStyle = '#F1C40F';
+                ctx.fillRect(joe.x, joe.y, joe.width, joe.height);
+            }
 
             requestAnimationFrame(gameLoop);
         }
