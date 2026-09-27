@@ -1,77 +1,28 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
-  <!-- КРЫЛЬЯ (ТЁМНЫЕ, БОЕВЫЕ) -->
-  <path d="M 75 50 Q 110 30 115 60 Q 95 70 75 60 Z" fill="#90A4AE" opacity="0.4" stroke="#455A64" stroke-width="2"/>
-  <path d="M 75 60 Q 105 55 110 80 Q 90 85 75 70 Z" fill="#90A4AE" opacity="0.4" stroke="#455A64" stroke-width="2"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 16 16" shape-rendering="crispEdges">
+  <!-- Фон (Небо как в Марио) -->
+  <rect width="16" height="16" fill="#5C94FC" />
 
-  <!-- БРЮШКО (ЖЁЛТО-ЧЁРНОЕ, БЕЗ ЖАЛА) -->
-  <ellipse cx="80" cy="85" rx="20" ry="18" fill="#FFCA28" stroke="#212121" stroke-width="2"/>
-  <path d="M 68 75 Q 65 85 68 98" stroke="#212121" stroke-width="5" fill="none"/>
-  <path d="M 82 70 Q 80 85 82 102" stroke="#212121" stroke-width="5" fill="none"/>
+  <!-- Крылья (Полупрозрачные, сзади) -->
+  <path d="M0 7 h2 v3 h-2 Z" fill="#90A4AE" opacity="0.8"/>
 
-  <!-- НОГИ И БОТИНКИ (ВОЕННЫЕ) -->
-  <!-- Левая нога -->
-  <path d="M 60 95 L 55 115 L 45 115" stroke="#212121" stroke-width="7" fill="none" stroke-linejoin="round"/>
-  <rect x="35" y="110" width="20" height="14" rx="2" fill="#3E2723" stroke="#212121" stroke-width="2"/>
-  <rect x="35" y="118" width="20" height="6" fill="#212121"/>
-  
-  <!-- Правая нога -->
-  <path d="M 80 95 L 85 115 L 95 115" stroke="#212121" stroke-width="7" fill="none" stroke-linejoin="round"/>
-  <rect x="75" y="110" width="20" height="14" rx="2" fill="#3E2723" stroke="#212121" stroke-width="2"/>
-  <rect x="75" y="118" width="20" height="6" fill="#212121"/>
+  <!-- Красная бандана Рэмбо -->
+  <path d="M0 1 h3 v3 h-3 Z M2 1 h9 v1 h-9 Z M2 2 h11 v1 h-11 Z M2 3 h2 v3 h-2 Z M12 3 h2 v3 h-2 Z" fill="#D32F2F"/>
 
-  <!-- ТОРС: КОЖАНАЯ КУРТКА И ЖИЛЕТ -->
-  <path d="M 45 60 L 85 60 L 95 95 L 40 95 Z" fill="#212121" stroke="#000" stroke-width="2"/>
-  <!-- Разрез куртки (видно жёлтое тело) -->
-  <path d="M 55 60 L 65 95 L 75 60 Z" fill="#FFCA28"/>
-  <!-- Пуленепробиваемый жилет -->
-  <path d="M 48 65 L 82 65 L 85 90 L 45 90 Z" fill="#424242" stroke="#000" stroke-width="2"/>
-  <rect x="50" y="70" width="30" height="5" fill="#212121"/>
-  <rect x="50" y="80" width="30" height="5" fill="#212121"/>
-  
-  <!-- ПАТРОННАЯ ЛЕНТА ЧЕРЕЗ ПЛЕЧО -->
-  <path d="M 50 60 L 80 90" stroke="#616161" stroke-width="6" fill="none"/>
-  <circle cx="55" cy="65" r="2" fill="#FFC107"/>
-  <circle cx="60" cy="70" r="2" fill="#FFC107"/>
-  <circle cx="65" cy="75" r="2" fill="#FFC107"/>
-  <circle cx="70" cy="80" r="2" fill="#FFC107"/>
+  <!-- Жёлтое тело шмеля -->
+  <path d="M4 2 h8 v4 h-8 Z M5 7 h6 v1 h-6 Z M5 9 h6 v4 h-6 Z M6 10 h1 v1 h-1 Z M8 10 h1 v1 h-1 Z" fill="#FFCA28"/>
 
-  <!-- РУКИ (МОЩНЫЕ) -->
-  <!-- Левая рука с пулемётом -->
-  <path d="M 45 65 L 25 80" stroke="#212121" stroke-width="12" stroke-linecap="round"/>
-  <circle cx="23" cy="82" r="7" fill="#FFCA28" stroke="#212121" stroke-width="2"/> <!-- Кулак -->
-  
-  <!-- ПУЛЕМЁТ (ОГРОМНЫЙ) -->
-  <rect x="5" y="75" width="25" height="8" fill="#212121" stroke="#000" stroke-width="2"/> <!-- Ствол -->
-  <rect x="18" y="83" width="8" height="12" fill="#424242"/> <!-- Магазин -->
-  <rect x="0" y="77" width="8" height="4" fill="#616161"/> <!-- Дуло -->
-  
-  <!-- Правая рука -->
-  <path d="M 85 65 L 105 80" stroke="#212121" stroke-width="12" stroke-linecap="round"/>
-  <circle cx="107" cy="82" r="7" fill="#FFCA28" stroke="#212121" stroke-width="2"/> <!-- Кулак -->
+  <!-- Тень под подбородком -->
+  <path d="M4 6 h8 v1 h-8 Z" fill="#F9A825"/>
 
-  <!-- ГОЛОВА (СУРОВАЯ) -->
-  <circle cx="65" cy="35" r="26" fill="#FFCA28" stroke="#212121" stroke-width="2"/>
-  <!-- Чёрные полосы на голове -->
-  <path d="M 45 20 Q 65 10 85 20" stroke="#212121" stroke-width="8" fill="none"/>
+  <!-- Белые линзы авиаторов -->
+  <path d="M5 4 h2 v1 h-2 Z M9 4 h2 v1 h-2 Z" fill="#FFFFFF"/>
 
-  <!-- БАНДАНА РЭМБО -->
-  <path d="M 39 22 Q 65 5 91 22 L 91 30 Q 65 15 39 30 Z" fill="#B71C1C" stroke="#000" stroke-width="2"/>
-  <path d="M 88 26 L 105 15 L 100 35 Z" fill="#B71C1C" stroke="#000" stroke-width="2"/> <!-- Развевающийся хвост -->
-  <path d="M 85 28 L 100 22 L 95 38 Z" fill="#B71C1C" stroke="#000" stroke-width="2"/> <!-- Второй хвост -->
+  <!-- Чёрный контур, очки, ремень и ботинки -->
+  <path d="M4 0 h1 v1 h-1 Z M10 0 h1 v1 h-1 Z M3 1 h1 v5 h-1 Z M10 1 h1 v5 h-1 Z M3 6 h8 v1 h-8 Z M4 7 h1 v1 h-1 Z M9 7 h1 v1 h-1 Z M3 8 h1 v5 h-1 Z M12 8 h1 v5 h-1 Z M3 13 h10 v1 h-10 Z M4 14 h3 v1 h-3 Z M9 14 h3 v1 h-3 Z M12 12 h2 v1 h-2 Z" fill="#212121"/>
 
-  <!-- ОЧКИ АВИАТОРЫ (ПОЛНОСТЬЮ ЧЁРНЫЕ, КАК У ТЕРМИНАТОРА) -->
-  <path d="M 42 32 L 62 32 L 58 45 L 45 45 Z" fill="#000" stroke="#616161" stroke-width="2"/>
-  <path d="M 68 32 L 88 32 L 85 45 L 72 45 Z" fill="#000" stroke="#616161" stroke-width="2"/>
-  <line x1="62" y1="36" x2="68" y2="36" stroke="#616161" stroke-width="3"/> <!-- Перемычка -->
+  <!-- Серая кожаная куртка и пулемёт -->
+  <path d="M4 8 h8 v1 h-8 Z M4 9 h1 v4 h-1 Z M11 9 h1 v4 h-1 Z M12 9 h3 v3 h-3 Z M13 10 h2 v1 h-2 Z" fill="#424242"/>
 
-  <!-- СУРОВЫЙ РОТ И СИГАРА -->
-  <line x1="52" y1="52" x2="78" y2="52" stroke="#212121" stroke-width="3" stroke-linecap="round"/> <!-- Прямая линия рта -->
-  <rect x="45" y="50" width="12" height="4" fill="#3E2723" rx="1"/> <!-- Сигара -->
-  <circle cx="45" cy="52" r="2" fill="#FF5722"/> <!-- Тлеющий кончик сигары -->
-
-  <!-- УСИКИ (КОРОТКИЕ, НАПРАВЛЕНЫ НАЗАД) -->
-  <path d="M 50 12 L 35 5" stroke="#212121" stroke-width="3" stroke-linecap="round"/>
-  <circle cx="33" cy="4" r="3" fill="#212121"/>
-  <path d="M 80 12 L 95 5" stroke="#212121" stroke-width="3" stroke-linecap="round"/>
-  <circle cx="97" cy="4" r="3" fill="#212121"/>
+  <!-- Коричневый ремень и ботинки -->
+  <path d="M5 11 h6 v1 h-6 Z M4 15 h3 v1 h-3 Z M9 15 h3 v1 h-3 Z" fill="#4E342E"/>
 </svg>
