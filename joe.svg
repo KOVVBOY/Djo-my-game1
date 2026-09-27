@@ -1,61 +1,73 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 256 256">
   <!-- ФОН (прозрачный) -->
 
-  <!-- КРЫЛЬЯ (Сзади, как на рисунке) -->
-  <path d="M 150 100 L 220 80 L 210 110 L 230 120 L 180 150 Z" fill="#AED6F1" opacity="0.6" stroke="#1A1A1A" stroke-width="6" stroke-linejoin="round"/>
+  <!-- КРЫЛЬЯ (Сзади, с характерными зубцами, как на рисунке) -->
+  <path d="M 130 100 L 210 70 L 195 110 L 235 120 L 160 170 L 140 140 Z" fill="#37474F" stroke="#1A1A1A" stroke-width="6" stroke-linejoin="round"/>
+  <!-- Блики на крыльях -->
+  <path d="M 170 90 L 190 85 L 185 105" fill="none" stroke="#607D8B" stroke-width="3" stroke-linecap="round"/>
 
   <!-- ЗАДНЯЯ НОГА -->
-  <path d="M 140 190 L 135 230 L 155 230 L 150 190 Z" fill="#F1C40F" stroke="#1A1A1A" stroke-width="6"/>
-  <!-- Задний ботинок -->
-  <path d="M 135 230 L 120 240 L 120 250 L 160 250 L 160 230 Z" fill="#1A1A1A" stroke="#1A1A1A" stroke-width="6"/>
+  <path d="M 140 180 L 135 230 L 150 230 L 145 180 Z" fill="#F1C40F" stroke="#1A1A1A" stroke-width="6" stroke-linejoin="round"/>
+  <!-- Задний ботинок (Огромный, чёрный) -->
+  <path d="M 135 220 L 100 235 L 95 245 L 160 245 L 155 220 Z" fill="#1A1A1A" stroke="#1A1A1A" stroke-width="6" stroke-linejoin="round"/>
 
-  <!-- ТЕЛО (Жёлтое, грушевидное) -->
-  <ellipse cx="115" cy="150" rx="45" ry="55" fill="#F1C40F" stroke="#1A1A1A" stroke-width="8"/>
-
-  <!-- РЕМЕНЬ (Толстый, диагональный, как на скетче) -->
-  <path d="M 70 180 L 160 90 L 150 80 L 60 170 Z" fill="#3E2723" stroke="#1A1A1A" stroke-width="6"/>
+  <!-- ТЕЛО (Форма груши, слегка наклонено) -->
+  <path d="M 105 90 C 70 100 70 160 90 190 C 110 200 140 200 150 180 C 160 140 150 90 105 90 Z" fill="#F1C40F" stroke="#1A1A1A" stroke-width="8" stroke-linejoin="round"/>
+  
+  <!-- РЕМЕНЬ ЧЕРЕЗ ТЕЛО (Толстый, диагональный) -->
+  <path d="M 75 180 L 155 90 L 145 80 L 65 170 Z" fill="#3E2723" stroke="#1A1A1A" stroke-width="6" stroke-linejoin="round"/>
   <!-- Пряжка ремня -->
-  <circle cx="110" cy="135" r="8" fill="#616161" stroke="#1A1A1A" stroke-width="4"/>
-  <circle cx="110" cy="135" r="3" fill="#1A1A1A"/>
+  <circle cx="110" cy="135" r="10" fill="#616161" stroke="#1A1A1A" stroke-width="5"/>
+  <circle cx="110" cy="135" r="4" fill="#1A1A1A"/>
+  <line x1="110" y1="125" x2="110" y2="145" stroke="#1A1A1A" stroke-width="2"/>
 
   <!-- ПЕРЕДНЯЯ НОГА -->
-  <path d="M 100 190 L 80 230 L 100 230 L 110 190 Z" fill="#F1C40F" stroke="#1A1A1A" stroke-width="6"/>
-  <!-- Передний ботинок -->
-  <path d="M 80 230 L 60 240 L 60 250 L 110 250 L 110 230 Z" fill="#1A1A1A" stroke="#1A1A1A" stroke-width="6"/>
+  <path d="M 110 185 L 85 230 L 100 230 L 120 185 Z" fill="#F1C40F" stroke="#1A1A1A" stroke-width="6" stroke-linejoin="round"/>
+  <!-- Передний ботинок (Огромный, чёрный) -->
+  <path d="M 85 220 L 55 235 L 50 245 L 115 245 L 110 220 Z" fill="#1A1A1A" stroke="#1A1A1A" stroke-width="6" stroke-linejoin="round"/>
 
-  <!-- РУКИ (Толстые, мускулистые) -->
-  <!-- Левая рука (за пушкой) -->
-  <path d="M 80 120 Q 60 150 70 180 L 90 170 Q 80 140 100 120 Z" fill="#F1C40F" stroke="#1A1A1A" stroke-width="8" stroke-linejoin="round"/>
-  <!-- Правая рука (держит пушку) -->
-  <path d="M 150 120 Q 170 150 160 170 L 140 160 Q 150 140 130 120 Z" fill="#F1C40F" stroke="#1A1A1A" stroke-width="8" stroke-linejoin="round"/>
+  <!-- РУКИ (Короткие, мускулистые) -->
+  <!-- Левая рука (под пушкой) -->
+  <path d="M 85 125 C 60 140 65 170 85 170" fill="none" stroke="#F1C40F" stroke-width="20" stroke-linecap="round"/>
+  <path d="M 85 125 C 60 140 65 170 85 170" fill="none" stroke="#1A1A1A" stroke-width="6" stroke-linecap="round"/>
+  <!-- Правая рука (держит рукоять) -->
+  <path d="M 145 125 C 165 140 160 160 145 165" fill="none" stroke="#F1C40F" stroke-width="18" stroke-linecap="round"/>
+  <path d="M 145 125 C 165 140 160 160 145 165" fill="none" stroke="#1A1A1A" stroke-width="6" stroke-linecap="round"/>
 
-  <!-- ОГРОМНАЯ ПУШКА (Диагональная, как на рисунке) -->
-  <!-- Ствол -->
-  <path d="M 60 200 L 180 70 L 200 90 L 80 220 Z" fill="#424242" stroke="#1A1A1A" stroke-width="8" stroke-linejoin="round"/>
-  <!-- Дуло (расширение) -->
-  <path d="M 180 70 L 210 40 L 230 60 L 200 90 Z" fill="#1A1A1A" stroke="#1A1A1A" stroke-width="8" stroke-linejoin="round"/>
-  <!-- Рукоять / приклад -->
-  <path d="M 60 200 L 40 220 L 50 230 L 70 210 Z" fill="#5D4037" stroke="#1A1A1A" stroke-width="6"/>
-  <!-- Магазин / деталь -->
-  <rect x="110" y="140" width="15" height="30" rx="5" fill="#1A1A1A" transform="rotate(-45 110 140)"/>
+  <!-- ОГРОМНАЯ ПУШКА (Диагональная, с раструбом) -->
+  <!-- Основной ствол -->
+  <path d="M 60 200 L 180 80 L 195 95 L 75 215 Z" fill="#424242" stroke="#1A1A1A" stroke-width="8" stroke-linejoin="round"/>
+  <!-- Раструб (Расширение на конце) -->
+  <path d="M 175 85 L 225 35 L 245 55 L 195 105 Z" fill="#1A1A1A" stroke="#1A1A1A" stroke-width="8" stroke-linejoin="round"/>
+  <!-- Рукоять/Приклад (внизу) -->
+  <path d="M 60 200 L 40 220 L 55 235 L 75 215 Z" fill="#3E2723" stroke="#1A1A1A" stroke-width="6" stroke-linejoin="round"/>
+  <!-- Спусковой крючок / деталь магазина -->
+  <path d="M 110 145 L 125 160 L 115 170 L 100 155 Z" fill="#1A1A1A" stroke="#1A1A1A" stroke-width="5"/>
+  <!-- Полоски на стволе для текстуры -->
+  <line x1="90" y1="170" x2="100" y2="180" stroke="#1A1A1A" stroke-width="4"/>
+  <line x1="110" y1="150" x2="120" y2="160" stroke="#1A1A1A" stroke-width="4"/>
+  <line x1="130" y1="130" x2="140" y2="140" stroke="#1A1A1A" stroke-width="4"/>
 
-  <!-- ГОЛОВА (Крупная, наклонённая) -->
-  <ellipse cx="130" cy="70" rx="45" ry="50" fill="#F1C40F" stroke="#1A1A1A" stroke-width="8"/>
+  <!-- ГОЛОВА (Наклонённая, грушевидная) -->
+  <path d="M 115 20 C 90 20 80 50 85 80 C 90 100 130 105 150 90 C 170 70 160 20 115 20 Z" fill="#F1C40F" stroke="#1A1A1A" stroke-width="8" stroke-linejoin="round"/>
 
-  <!-- УСИКИ (Загнутые, как на рисунке) -->
-  <path d="M 110 25 Q 100 -10 80 10" fill="none" stroke="#1A1A1A" stroke-width="6" stroke-linecap="round"/>
-  <circle cx="80" cy="10" r="6" fill="#1A1A1A"/>
-  <path d="M 150 25 Q 160 -10 180 10" fill="none" stroke="#1A1A1A" stroke-width="6" stroke-linecap="round"/>
-  <circle cx="180" cy="10" r="6" fill="#1A1A1A"/>
+  <!-- УСИКИ (Забавно закрученные) -->
+  <path d="M 105 25 C 90 -5 70 10 75 25" fill="none" stroke="#1A1A1A" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="75" cy="25" r="5" fill="#1A1A1A"/>
+  <path d="M 135 25 C 150 -5 170 10 165 25" fill="none" stroke="#1A1A1A" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="165" cy="25" r="5" fill="#1A1A1A"/>
 
   <!-- ЗЛЫЕ ГЛАЗА (Как на твоём рисунке) -->
-  <!-- Брови (V-образные) -->
-  <path d="M 100 50 L 120 60" stroke="#1A1A1A" stroke-width="6" stroke-linecap="round"/>
-  <path d="M 160 50 L 140 60" stroke="#1A1A1A" stroke-width="6" stroke-linecap="round"/>
-  <!-- Зрачки -->
-  <ellipse cx="115" cy="65" rx="5" ry="8" fill="#1A1A1A"/>
-  <ellipse cx="145" cy="65" rx="5" ry="8" fill="#1A1A1A"/>
+  <!-- Брови (Сведены к центру) -->
+  <path d="M 95 50 L 115 60" stroke="#1A1A1A" stroke-width="6" stroke-linecap="round"/>
+  <path d="M 145 50 L 125 60" stroke="#1A1A1A" stroke-width="6" stroke-linecap="round"/>
+  <!-- Глаза (маленькие зрачки) -->
+  <ellipse cx="110" cy="67" rx="5" ry="7" fill="#1A1A1A"/>
+  <ellipse cx="130" cy="67" rx="5" ry="7" fill="#1A1A1A"/>
 
-  <!-- СУРОВЫЙ РОТ -->
-  <path d="M 115 85 Q 130 90 145 85" fill="none" stroke="#1A1A1A" stroke-width="6" stroke-linecap="round"/>
+  <!-- НОС / МОРДА (Выступает вперёд) -->
+  <path d="M 120 70 C 110 85 115 95 125 95" fill="none" stroke="#1A1A1A" stroke-width="6" stroke-linecap="round"/>
+
+  <!-- СУРОВЫЙ РОТ (Дуга вниз) -->
+  <path d="M 105 85 Q 120 75 135 85" fill="none" stroke="#1A1A1A" stroke-width="6" stroke-linecap="round"/>
 </svg>
